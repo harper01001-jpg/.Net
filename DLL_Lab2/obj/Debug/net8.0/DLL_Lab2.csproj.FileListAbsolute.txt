@@ -1,0 +1,11 @@
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\bin\Debug\net8.0\DLL_Lab2.deps.json
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\bin\Debug\net8.0\DLL_Lab2.dll
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\bin\Debug\net8.0\DLL_Lab2.pdb
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\DLL_Lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\DLL_Lab2.AssemblyInfoInputs.cache
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\DLL_Lab2.AssemblyInfo.cs
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\DLL_Lab2.csproj.CoreCompileInputs.cache
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\DLL_Lab2.dll
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\refint\DLL_Lab2.dll
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\DLL_Lab2.pdb
+C:\Users\kheru\Downloads\Звіти\Діброва\DLL_Lab2\obj\Debug\net8.0\ref\DLL_Lab2.dll

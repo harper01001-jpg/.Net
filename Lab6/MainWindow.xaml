@@ -1,0 +1,45 @@
+﻿<Window x:Class="EnergyCalculatorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Розрахунок енергії тіла (Варіант 6)" Height="350" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Ввід маси -->
+        <TextBlock Text="Маса тіла (m), кг:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+        <TextBox x:Name="txtMass" Grid.Row="0" Grid.Column="1" Margin="0,5" Padding="2"/>
+
+        <!-- Ввід швидкості -->
+        <TextBlock Text="Швидкість (v), м/с:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+        <TextBox x:Name="txtVelocity" Grid.Row="1" Grid.Column="1" Margin="0,5" Padding="2"/>
+
+        <!-- Ввід висоти -->
+        <TextBlock Text="Висота (h), м:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+        <TextBox x:Name="txtHeight" Grid.Row="2" Grid.Column="1" Margin="0,5" Padding="2"/>
+
+        <!-- Кнопка розрахунку -->
+        <Button x:Name="btnCalculate" Content="Обчислити енергію" Grid.Row="4" Grid.ColumnSpan="2" 
+                Margin="0,10" Padding="5" FontWeight="Bold" Background="#FFDDDDDD" Click="BtnCalculate_Click"/>
+
+        <!-- Вивід кінетичної енергії -->
+        <TextBlock Text="Кінетична енергія (E):" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+        <TextBox x:Name="txtKinetic" Grid.Row="5" Grid.Column="1" Margin="0,5" Padding="2" IsReadOnly="True" Background="#FFF0F0F0"/>
+
+        <!-- Вивід потенційної енергії -->
+        <TextBlock Text="Потенційна енергія (P):" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+        <TextBox x:Name="txtPotential" Grid.Row="6" Grid.Column="1" Margin="0,5" Padding="2" IsReadOnly="True" Background="#FFF0F0F0"/>
+    </Grid>
+</Window>

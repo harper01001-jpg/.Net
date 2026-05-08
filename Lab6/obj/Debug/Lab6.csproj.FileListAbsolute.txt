@@ -1,0 +1,14 @@
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\bin\Debug\Lab6.exe.config
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\bin\Debug\Lab6.exe
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\bin\Debug\Lab6.pdb
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.csproj.AssemblyReference.cache
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\MainWindow.baml
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\MainWindow.g.cs
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\App.g.cs
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6_MarkupCompile.cache
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.g.resources
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.Properties.Resources.resources
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.csproj.GenerateResource.cache
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.exe
+C:\Users\kheru\Downloads\Звіти\Діброва\Lab6\obj\Debug\Lab6.pdb

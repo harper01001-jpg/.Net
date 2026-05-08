@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient; //для роботи з ADO.NET
 using System.Windows.Forms;
@@ -7,13 +7,48 @@ namespace Lab8_ADO
 {
     public partial class Form1 : Form
     {
-        // Рядок підключення до  локальної бази даних
+        // Рядок підключення до локальної бази даних
         string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ShopDB.mdf;Integrated Security=True";
 
         public Form1()
         {
             InitializeComponent();
+            PopulateInitialData(); // Автоматично додаємо 5 записів, якщо база порожня
             LoadData(); // Завантажуємо дані при запуску програми
+        }
+
+        // МЕТОД ДЛЯ АВТОМАТИЧНОГО ЗАПОВНЕННЯ 5 ЗАПИСАМИ
+        private void PopulateInitialData()
+        {
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                try
+                {
+                    conn.Open();
+                    // Перевіряємо, скільки записів зараз у таблиці
+                    SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM Products", conn);
+                    int count = (int)checkCmd.ExecuteScalar();
+
+                    // Якщо таблиця порожня (0 записів), додаємо 5 тестових
+                    if (count == 0)
+                    {
+                        string insertSql = @"
+                            INSERT INTO Products (Code, Name, Type, Price, Manufacturer, Country, Cost) VALUES
+                            (101, N'Ноутбук Acer Aspire 7', N'Електроніка', 25999.50, N'Acer', N'Тайвань', 21000.00),
+                            (102, N'Кавомашина Philips', N'Побутова техніка', 12499.00, N'Philips', N'Румунія', 9500.00),
+                            (103, N'Стілець офісний Марк', N'Меблі', 3200.00, N'Новий Стиль', N'Україна', 2150.00),
+                            (104, N'Смартфон Samsung Galaxy', N'Електроніка', 35000.00, N'Samsung', N'Південна Корея', 28000.00),
+                            (105, N'Мікрохвильова піч LG', N'Побутова техніка', 4500.00, N'LG', N'Китай', 3200.00)";
+
+                        SqlCommand insertCmd = new SqlCommand(insertSql, conn);
+                        insertCmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Якщо таблиці ще не існує, ігноруємо помилку (щоб програма не падала)
+                }
+            }
         }
 
         // Метод для читання даних з БД і виведення їх у DataGridView
